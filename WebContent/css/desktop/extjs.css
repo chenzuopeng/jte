@@ -1,0 +1,167 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote
+	{
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,img {
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.full-box ul {
+	margin-left:15px;
+	list-style-image: url(../../images/desktop/c-sep-l.gif);
+}
+
+ol,ul {
+	list-style: none;
+}
+
+caption,th {
+	text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,q:after {
+	content: '';
+}
+
+abbr,acronym {
+	border: 0;
+}
+
+body { /*font-family: helvetica,arial,tahoma,sans-serif;*/
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica,
+		sans-serif;
+	font-size: 12px;
+	color: #555;
+	line-height: 18px;
+	background-color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden
+}
+
+td {
+	font-size: 13px;
+}
+
+a:link,a:visited,a:active {
+	color: #0464BB;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1C417C;
+	text-decoration: underline;
+}
+
+/* main document center */
+#viewport {
+	margin: auto;
+	margin-top: 28px;
+	text-align: left;
+	width: 830px;
+}
+
+/* 404 403 error document center */
+#viewport-small {
+	margin:auto;
+	margin-top:100px;
+	text-align:left;
+	width:630px;
+}
+
+/* body styles */
+#bd {
+	margin: 0 10px 0 0;
+	zoom: 1;
+}
+
+#bd p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#bd br {
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#bd .left-column {
+	width: 700px;
+	float: left;
+}
+
+#bd .right-column {
+	width: 200px;
+	float: left;
+	margin-left: 20px;
+}
+
+#bd .right-column p {
+	margin: 5px;
+	font-size: 12px;
+}
+
+#bd h3 {
+	font-family: verdana, arial, sans-serif;
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	color: #385F95;
+	margin: 7px 0;
+}
+
+#bd h4 {
+	font-family: "Trebuchet MS", Tahoma, arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #555;
+	margin: 5px 0;
+}
+
+#bd h5 {
+	font-family: "Trebuchet MS", Tahoma, arial, sans-serif;
+	background-color: #F1F1F1;
+	padding: 3px;
+	line-height: 20px;
+	color: #789030;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* side boxes */
+
+div.full-box {
+	background: transparent url(../../images/desktop/full-box.png) no-repeat
+		;
+	padding-top: 12px;
+	width: 620px;
+}
+
+div.full-box-inner {
+	background: transparent url(../../images/desktop/full-box.png) no-repeat
+		0 bottom;
+	padding: 0 15px 10px;
+	font-size: 12px;
+}
+
+div.full-box-inner h2 {
+	color: #1A5C9A;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+html, body {height: 100%;}
+html {overflow-x:hidden;}
+#wrapper {min-height: 100%;height: 100%;}
+#footer { height:25px;  margin:0 auto;}
+form{margin:0;padding:0}
+
+
+body{font:normal 12px/20px arial,helvetica,sans-serif;}
+a,a:visited{color:#498ab7;text-decoration:none;}
+a:hover,a:active{color:#f60;text-decoration:underline!important;}
+h1,h2,h3,h4{font-weight:bold;}
+h1{}
+h2{font-size:20px;}
+h3{font-size:14px;padding:5px 0 0 5px}
+h4{font-size:12px;}
+img{border:none;}
+input,select,option{color:#666;font:12px arial,helvetica,sans-serif;}
+input.w{background:#e6eef4;padding:1px;border:1px solid #a7c0d7;}
+button{font-size:12px;}
+textarea{padding:2px 4px;border:1px solid #7f9db9;background:#fff url(../images/textInputA.gif) no-repeat;color:#666;font:12px arial,helvetica,sans-serif;}
+select{padding:1px;border:1px solid #7f9db9;background:#fff url(../images/textInputA.gif) no-repeat;font-size:12px;}
+option{}
+p{margin:5px 0;}
+ul{list-style-type:none;}
+#d{position:relative;top:26px; left:600px}
+
+button{background:url(../images/btn.gif) no-repeat;width:63px;height:23px;margin:0px;border:0;color:#528db7;}
+table{border-collapse:collapse;text-align:left;color:#676767;}
+.t1 th,.t1 td,.t2 th,.t2 td{padding:1px 10px;border:1px solid #cae1f3;padding-left:5px;}
+th{background:#cae1f3;font-size:13px;color:#4c8bb7;font-weight:bold;}
+thead{border:1px solid #6ea1c0;}
+.headb{background:url(../images/head.gif) repeat-x;}
+.tname{height:40px;font-size:14px;font-weight:bold;}/*表单名字*/
+.ttitle{background:url(../images/titlebg.gif) repeat-x; font-size:13px;}/*表单具体名字的背景设定*/
+.ttname{color:#5684a8;background:#f1f6fa;font-size:12px;}/*表格内数据名称样式设定*/
+.t1{border:0px solid #c8e1f5;}
+.t2{border:1px solid #c1dbef;}
+.t3{border:1px solid #c8e1f5;}
+.red{color:red;}
+.white,a.white,a.white:visited,a.white:hover,a.white:active{color:#dbe8f1;}
+
+#head{background:url(../images/head.gif) no-repeat 0 0px;margin:0; height:69px;}
+#head .quicklink{float:right;margin-top:5px;width:300px;}
+#head .user{float:left; margin:28px 0 0 150px;padding:2px 4px;color:#333333;}
+
+#left{ 
+	float:left;
+	height:888px; 
+	width:188px; 
+	text-align:center; 
+	background:url(../images/tree_bg.gif) repeat-x;
+	text-align: left;
+}
+
+.icon-source{background-image:url(../images/source.gif) !important;}
+.icon-test{background-image:url(../images/test.gif) !important;}
+.icon-work_plan{background-image:url(../images/@work_plan.gif) !important;}
+.icon-histroy1{background-image:url(../images/sysmanage.gif) !important;}
+.icon-sys{background-image:url(../images/sys.gif) !important;}
+.icon-library{background-image:url(../images/@library.gif) !important;}
+.icon-bease{background-image:url(../images/bease.gif) !important;}
+.icon-file_folder{background-image:url(../images/@file_folder.gif) !important;}
+.icon-payment{background-image:url(../images/@payment.gif) !important;}
+.icon-assess{background-image:url(../images/assess.gif) !important;}
+.icon-winexe{background-image:url(../images/winexe.gif) !important;}
+.icon-resource{background-image:url(../images/@resource.gif) !important;}
+
+span.required {
+	color: red;
+	margin: 0 2px 0 2px;
+}
+
+.btn_img {
+    width: 16px;
+    height: 15px;
+    border: 0; 
+}
+
+.mod_img {
+    width: 16px;
+    height: 16px;
+    border: 0; 
+}
+
+.page_img {
+    width: 16px;
+    height: 13px;
+    border: 0;	
+}
+
+
+

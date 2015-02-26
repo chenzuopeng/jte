@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts order="99">
+
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+
+    <constant name="struts.convention.default.parent.package" value="jte"/>
+
+	<package name="jte" extends="convention-default">
+		<global-results>
+			<result name="QueryPage" type="freemarker">/org/jte/ftl/QueryPage.ftl</result>
+			<result name="TablePage" type="freemarker">/org/jte/ftl/TablePage.ftl</result>
+			<result name="IframeQueryPage" type="freemarker">/org/jte/ftl/IframeQueryPage.ftl</result>
+			<result name="ImageQueryPage" type="freemarker">/org/jte/ftl/ImageQueryPage.ftl</result>
+		</global-results>
+	</package>
+
+</struts>

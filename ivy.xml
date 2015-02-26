@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+	<info organisation="org.jte" module="jte" revision="0.1.1" />
+	<configurations>
+		<conf name="nodeps" description="不包含依赖库"/>
+	    <conf name="core" description="核心部分"/>
+	    <conf name="provided" description="用于指示需要提供一个WEB容器或一个JDK"/>
+		<conf name="test" description="测试"/>
+	</configurations>
+	<publications>
+	   	<artifact/>
+		<artifact name="jte-source" type="source" ext="zip"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.commons" name="commons-lang" rev="2.4" conf="core->default"/>
+	    <dependency org="org.apache.struts" name="struts2-core" rev="2.1.8" conf="core->default">
+	        <exclude org="org.springframework"/>
+	        <exclude org="org.apache.commons" name="commons-io"/>
+	    </dependency>
+	    <dependency org="org.apache.struts" name="struts2-convention-plugin" rev="2.1.8" conf="core->master"/>
+	    <dependency org="org.apache.log4j" name="log4j" rev="1.2.15" conf="core->default" />
+	     <dependency org="org.apache.commons" name="commons-io" rev="2.0.1" conf="core->default"/>
+	    <dependency org="org.codehaus.jackson" name="jackson-mapper-asl" rev="1.5.4" conf="core->default"/>
+	    <dependency org="javax.servlet" name="servlet-api" rev="2.4" conf="provided->default"/>
+	    <dependency org="javax.servlet.jsp" name="jsp-api" rev="2.1" conf="provided->default"/>
+	    <dependency org="org.junit" name="junit" rev="4.5" conf="test->default" />
+	    <dependency org="com.h2database" name="h2" rev="1.2.138" conf="test->default">
+	        <exclude org="org.slf4j"/>
+	    </dependency>
+	    <dependency org="com.ffcs" name="j2eeframwork" rev="1.0" conf="test->core" />
+	    <dependency org="org.apache.struts" name="struts2-spring-plugin" rev="2.1.8" conf="test->master"/>
+	    <dependency org="org.jsearch" name="jsearch" rev="0.2" conf="core->default">
+	       
+	    </dependency>
+	</dependencies>
+</ivy-module>

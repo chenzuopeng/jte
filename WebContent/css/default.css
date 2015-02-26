@@ -1,0 +1,110 @@
+.ext-el-mask-msg div,.loading-indicator,.x-tab-strip span.x-tab-strip-text,.x-form-invalid-msg,.x-small-editor .x-form-field,.x-fieldset legend,.x-btn,.x-btn button,.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select,.x-toolbar label,.x-grid3-hd-row td,.x-grid3-row td,.x-grid3-summary-row td,.x-grid3-topbar,.x-grid3-bottombar,.x-grid-group-hd div,.x-grid-empty,.x-dd-drag-ghost,.x-tree-node,.x-date-middle,.x-date-left,.x-date-right,.x-date-inner a,.x-date-mp td,.x-date-mp-btns button,.x-tip .x-tip-mc,.x-tip .x-tip-header-text,.x-tip .x-tip-body,.x-menu-list-item,#x-debug-browser .x-tree .x-tree-node a span,.x-combo-list-hd,.x-combo-list-small .x-combo-list-item,.x-panel-header,.x-panel-tl .x-panel-header,.x-panel-mc,.x-window-tl .x-window-header,.x-window-mc,.x-progress-text,.x-date-inner th,.x-date-mmenu .x-menu-item{font-size:12px}
+.ext-ie .x-form-text {position:static !important;}
+
+.btn-style-{
+	background:url(../images/test.gif) no-repeat;
+	font-size:12px;
+	width:16px;
+	height:16px;
+	margin:0px;
+	border:0;
+	color:#528db7;
+}
+
+.form-readOnly {
+	color : black;
+}/*ForestGreen*/
+
+.x-grid3-row-radioBtn {
+	background-image:url(../images/row-radio-sprite.gif);
+}
+
+.ux-layout-center-item {
+    margin:0 auto;
+    text-align:left;
+}
+
+.ux-layout-center .x-panel-body,  /* if the container is a panel */
+body.ux-layout-center {           /* if the container is the doc body (for viewport) */
+    text-align:center;
+}
+
+.nav-bg-style {
+	background:url(../images/dhth.gif) repeat-x;
+	border : 5px solid black;
+}
+
+.nav-text-style {
+	color : orange;
+	font-weight: bold;
+}
+
+.nav-menu-style {
+	color : white;
+	font-weight: bold;
+}
+
+.nav-btn-over {
+    color: black;
+    font-weight: bold;
+}
+
+/*
+ * FileUploadField component styles
+ */
+.x-form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file {
+	position: absolute;
+	right: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file-btn {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.x-form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}
+
+.x-tree-node-noleaf {
+	background-image:url(../images/folder.gif) !important;
+}
+
+.x-tree-node-tel {
+	background-image:url(../images/tel.png) !important;
+}
+
+.x-tree-node-orgMainTel {
+	background-image:url(../images/orgMainTel.png) !important;
+}
+
+.x-tree-node-deptMainTel {
+	background-image:url(../images/deptMainTel.png) !important;
+}
+
+.x-tree-node-org {
+	background-image:url(../images/org.png) !important;
+}
+
+.x-tree-node-dept {
+	background-image:url(../images/dept.png) !important;
+}
+
+.x-tree-collapse {
+	background-image:url(../images/collapse.gif) !important;
+}
+
+.x-tree-expand {
+	background-image:url(../images/expand.gif) !important;
+}

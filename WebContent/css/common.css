@@ -1,0 +1,105 @@
+.titleImg{
+	background: transparent url(../images/@program.gif) no-repeat;
+	padding-left: 25px;
+	padding-top: 2px;
+	cursor: default;
+	overflow: visible;
+}
+
+.dateImg{
+	background: url(../images/date.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	padding-top: 2px;
+	margin: 0 3px;
+	cursor: default;
+}
+
+.areaImg{
+	background: url(../images/se.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	padding-top: 2px;
+	margin: 0px;
+	cursor: default;
+}
+
+.industryImg{
+	background: url(../images/se.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	padding-top: 2px;
+	margin: 0px;
+	cursor: default;
+}
+
+.searchImg{
+	/*width: 16px;*/
+	height: 16px;
+	background: transparent url(../images/arrow_green.gif) no-repeat;
+	padding-left: 30px;
+	cursor: default;
+}
+
+.firstPage{
+	background: url(../images/firstPageDisabled.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	cursor: default;
+	position: relative;
+	top: 2px;
+}
+
+.lastPage{
+	background: url(../images/lastPageDisabled.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	cursor: default;
+	position: relative;
+	top: 2px;
+}
+
+.prevPage{
+	background: url(../images/prevPageDisabled.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	cursor: default;
+	position: relative;
+	top: 2px;
+}
+
+.nextPage{
+	background: url(../images/nextPageDisabled.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	padding-left: 20px;
+	cursor: default;
+	position: relative;
+	top: 2px;
+}
+
+.btnAdd{
+	background: url(../images/btn_addbak.gif) no-repeat;
+	width: 53px;
+	height: 19px;
+	padding-left: 55px;
+	padding-top: 3px;
+	cursor: default;
+	overflow: visible;
+}
+
+.btnDel{
+	background: url(../images/btn_delbak.gif) no-repeat;
+	width: 53px;
+	height: 19px;
+	padding-left: 55px;
+	padding-top: 3px;
+	cursor: default;
+	overflow: visible;
+}

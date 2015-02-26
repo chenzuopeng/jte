@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<project basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<!-- 载入配置文件-->
+	<property file="build.properties" />
+
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+
+	<!--初始化-->
+	<target name="init">
+		<delete dir="${build.dir}"/>
+		<ivy:settings file="${ivy.settings.path}" />
+	</target>
+
+	<!-- 解析依赖 并构建路径一个ANT Path-->
+	<target name="resolveDepend" depends="init">
+		<ivy:resolve file="ivy.xml"/>
+		<ivy:cachepath pathid="compile.depends.lib.path"/>
+	</target>
+
+	<!-- 编译 -->
+	<target name="compile" depends="resolveDepend">
+		<mkdir dir="${classes.dir}"/>
+		<javac debug="true" encoding="${encoding}" source="1.5" target="1.5" srcdir="${src.dir}" destdir="${classes.dir}" classpathref="compile.depends.lib.path"/>
+		<!-- 编译单元测试代码 -->
+		<if>
+			<available file="${test.dir}" type="dir" />
+			<then>
+				<javac debug="true" encoding="${encoding}" source="1.5" target="1.5" srcdir="${test.dir}" destdir="${classes.dir}" classpathref="compile.depends.lib.path">
+					<exclude name="**/demo/**"/>
+				</javac>
+			</then>
+		</if>
+	</target>
+
+	<!-- 生成制品 -->
+	<target name="artifact" depends="compile">
+		<mkdir dir="${artifact.dir}" />
+		<jar destfile="${artifact.dir}/${jar.filename}">
+			<fileset dir="${classes.dir}">
+				<include name="**/*.class" />
+				<!-- 排除测试类  -->
+				<exclude name="**/*Test.class" />
+			</fileset>
+			<fileset dir="${src.dir}">
+				<include name="**/ftl/**"/>
+			</fileset>
+			<fileset dir="${resources.dir}">
+				<include name="struts-plugin.xml" />
+			</fileset>
+		</jar>
+		<zip destfile="${artifact.dir}/${module}-source-${revision}.zip">
+			<zipfileset dir="${src.dir}"/>
+			<zipfileset dir="${test.dir}"/>
+			<fileset dir="${resources.dir}" includes="struts-plugin.xml"/>
+		</zip>
+		<copyfile src="ivy.xml" dest="${artifact.dir}/ivy-${revision}.xml"/>
+		<property name="doc.dir" value="${artifact.dir}/docs/api" />
+		<javadoc  destdir="${doc.dir}"
+		           author="true"
+		           version="true"
+		           use="true"
+		           windowtitle="Jte API">
+			<fileset dir="src" defaultexcludes="yes"/>
+		</javadoc>
+		<zip destfile="${artifact.dir}/${module}-api-doc-${revision}.zip">
+			<zipfileset dir="${doc.dir}"/>
+		</zip>
+	</target>
+
+	<!-- 发布制品 -->
+	<target name="publish" depends="artifact">
+		<ivy:publish resolver="local" organisation="${organisation}" module="${module}" revision="${revision}" overwrite="true">
+			<artifacts pattern="${artifact.dir}/[artifact]-[revision].[ext]" />
+		</ivy:publish>
+	</target>
+
+	<!-- 检回依赖制品 -->
+	<target name="retrieve" depends="init">
+		<ivy:retrieve pattern="${lib.dir}/[organisation]-[artifact]-[revision].[ext]" type="jar" overwritemode="always"/>
+	</target>
+
+	<target name="war" depends="compile,retrieve">
+		<mkdir dir="${war.dir}"/>
+		<war destfile="${war.dir}/${war.filename}" webxml="${web.dir}/WEB-INF/web.xml">
+			<fileset dir="${web.dir}" >
+				<exclude name="**/WEB-INF/**"/>
+				<exclude name="**/META-INF/**"/>
+			</fileset>
+			<lib dir="${web.dir}/WEB-INF/lib"/>
+			<classes dir="${classes.dir}"/>
+		</war>
+	</target>
+
+	<target name="zip" depends="artifact,war,retrieve">
+		<zip destfile="${build.dir}/${module}-${revision}.zip">
+			<zipfileset dir="${lib.dir}" prefix="lib"/>
+			<zipfileset dir="${artifact.dir}"/>
+			<zipfileset dir="${war.dir}"/>
+		</zip>
+	</target>
+</project>

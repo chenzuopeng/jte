@@ -1,0 +1,17 @@
+	body{font:normal 12px/20px arial,helvetica,sans-serif;}
+	#head{position:absolute;background:#90bee0;margin:0;padding:0;height:40px;width:100%;border-bottom:1px solid #a0cce9;}
+    #headl{float:left;width:273px;background:url(../images/headl.gif) no-repeat ;height:40px;}
+    #headr{float:right;width:464px;background:url(../images/headr.gif) no-repeat ;height:40px;}
+    
+    #head2{position:absolute;background:#b7d4e9;margin:0;padding:0;height:40px;width:100%;border-bottom:1px solid #a0cce9;}
+    #headl2{float:left;width:275px;background:url(../images/headl2.gif) no-repeat ;height:40px;}
+    #headr2{float:right;width:680px;background:url(../images/headr2.gif) no-repeat ;height:40px;}
+    
+    #head3{position:absolute;background:#bbd7eb;margin:0;padding:0;height:40px;width:100%;border-bottom:1px solid #a0cce9;}
+    #headl3{float:left;width:366px;background:url(../images/headl3.gif) no-repeat ;height:40px;}
+    #headr3{float:right;width:564px;background:url(../images/headr3.gif) no-repeat ;height:40px;}
+    
+    .welcome{position:absolute;width:120px;float:left;padding:25px 0 0 270px;color:#333333;text-align:right;top:0;left:0;}
+    .rr{ position:absolute;padding:0 20px 0 0;width:400px;text-align:right;height:69px;top:0;right:0;margin:0;}
+    .quicklink{width:250px;padding:3px 0 0 0;text-align:right;}
+    .white,a.white,a.white:visited,a.white:hover,a.white:active{color:#dbe8f1;padding:0 7px;}

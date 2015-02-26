@@ -1,0 +1,77 @@
+#bd {
+	
+}
+
+div.home-block {
+	background: transparent url(../../images/desktop/med-box.png) no-repeat;
+	padding-top:11px;
+	width:300px;
+}
+div.home-block-inner {
+	background: transparent url(../../images/desktop/med-box.png) no-repeat 0 bottom;
+	padding:5px 20px 20px;
+	font-size:12px;
+}
+div.home-block-inner h2 {
+	color:#1A5C9A;
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 10px 0;
+}
+div.home-block-inner ul {
+	list-style-type:square;
+	margin-left:20px;
+	color: #789030;
+}
+div.home-block-inner ul li span {
+	color: #555;
+}
+
+div.nav-block {
+	background: transparent url(../../images/desktop/nav-box.png) no-repeat;
+	padding-top:11px;
+	width:180px;
+}
+div.nav-block-inner {
+	background: transparent url(../../images/desktop/nav-box.png) no-repeat 0 bottom;
+	padding:5px 20px 20px;
+	font-size:12px;
+}
+div.nav-block-inner h2 {
+	color:#1A5C9A;
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 10px 0;
+}
+div.nav-block-inner ul {
+	list-style-type:square;
+	margin-left:20px;
+	color: #789030;
+}
+div.nav-block-inner ul li span {
+	color: #555;
+}
+
+#bd .left-column {
+	width:300px;
+	float:left;
+}
+
+#bd .right-column {
+	width:300px;
+	float:left;
+	margin-left:20px;
+}
+
+#home {
+	padding-top:10px;
+}
+
+#v-right {
+	width : 630px;
+}
+
+#v-left {
+	width : 180px;
+	height : 450px;
+}

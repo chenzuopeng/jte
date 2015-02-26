@@ -1,0 +1,3 @@
+一个基于Freemaker的快速EXTJS开发框架,运用此框架只需在controller层编写类swing式的java代码即可。实现原理:通过模板运行时动态生成EXTJS代码。
+
+

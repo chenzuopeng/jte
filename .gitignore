@@ -1,0 +1,8 @@
+/target/
+/.settings/
+/.classpath
+/.project
+/bin/
+/WebContent/WEB-INF/classes/
+.tomcatplugin
+.checkstyle
